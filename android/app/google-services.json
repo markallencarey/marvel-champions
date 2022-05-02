@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "991218302641",
+    "project_id": "rn-template-2bf99",
+    "storage_bucket": "rn-template-2bf99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991218302641:android:4af1f94e59c89ac331ac90",
+        "android_client_info": {
+          "package_name": "com.brightbridgeweb.rn_template"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991218302641-bf5m34gtaocp6nrta3niolhlm0ocoigj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEQDk6OowFsxJkPKvFAJKKQJNBFkJqLzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991218302641-bf5m34gtaocp6nrta3niolhlm0ocoigj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "991218302641-92ida3nafnki49pvc1qh012poeqsfcoh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.brightbridgeweb.rn-template"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
