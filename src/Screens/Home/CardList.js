@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { View, Text, StyleSheet, TouchableOpacity, FlatList, ActivityIndicator } from 'react-native'
 //Packages
 import axios from 'axios'
-import parse, { domToReact } from 'html-react-parser'
+import RenderHtml from 'react-native-render-html'
 //Context
 //Constants
 //Navigation
@@ -29,7 +29,16 @@ export const CardList = () => {
 
 	const renderCard = card => {
 		const { name, text, traits } = card.item
-		console.log('file: CardList.js -> line 31 -> CardList -> card', card)
+		console.log('text', typeof text, text)
+
+		const renderTxt = {
+			html: text,
+		}
+		// console.log('file: CardList.js -> line 31 -> CardList -> card', card)
+		// const textString = `${text}`
+		// console.log('file: CardList.js -> line 34 -> CardList -> textString', typeof textString, textString)
+		// const textParsed = parse(textString)
+		// console.log('file: CardList.js -> line 36 -> CardList -> textParsed', typeof textParsed, textParsed)
 		// const text = `${card.item.text}`
 		// console.log('file: CardList.js -> line 32 -> CardList -> text', text)
 
@@ -37,7 +46,7 @@ export const CardList = () => {
 			<View style={styles.cardView}>
 				<Text style={styles.h2}>{name}</Text>
 				<Text style={styles.italicBody}>{traits}</Text>
-				<Text style={styles.body}>{text}</Text>
+				<RenderHtml contentWidth={'100%'} source={renderTxt} />
 			</View>
 		)
 	}

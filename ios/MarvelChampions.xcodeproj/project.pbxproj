@@ -7,20 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* rn_templateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rn_templateTests.m */; };
+		00440842AD314BF7A75EB6F9 /* NunitoSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B7C8D96264745D6BCB97D6C /* NunitoSans-SemiBoldItalic.ttf */; };
+		00E356F31AD99517003FC87E /* MarvelChampionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MarvelChampionsTests.m */; };
+		0B2353E66F744FBC846289AA /* NunitoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9869E755CEE44168A855AB5B /* NunitoSans-SemiBold.ttf */; };
+		11E043F3D00144A4AEFF5829 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E08B65A9509B4C1298662333 /* NunitoSans-ExtraLight.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		15E977D2D7100BC7A795CA97 /* libPods-rn_template-rn_templateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A26D470DAFA18A5410F61EF9 /* libPods-rn_template-rn_templateTests.a */; };
-		227FFE4B129DEE87DFF6505C /* libPods-rn_template.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3B872CB098EA6F35918720 /* libPods-rn_template.a */; };
-		3C87A0E788E4417EB7B2C379 /* Mukta-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B47E8F1BBD9F48E8B1CA5E7C /* Mukta-Medium.ttf */; };
-		562028FDBB3044A5B767D8B0 /* Mukta-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3261F1652D3648CAAD2AD890 /* Mukta-ExtraBold.ttf */; };
+		14316549AE89421AA4FFE897 /* NunitoSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E9CC12C60D347F6803CF961 /* NunitoSans-LightItalic.ttf */; };
+		15E977D2D7100BC7A795CA97 /* libPods-MarvelChampions-MarvelChampionsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A26D470DAFA18A5410F61EF9 /* libPods-MarvelChampions-MarvelChampionsTests.a */; };
+		227FFE4B129DEE87DFF6505C /* libPods-MarvelChampions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B3B872CB098EA6F35918720 /* libPods-MarvelChampions.a */; };
+		5965625E2C4146F5AB4F7C5B /* NunitoSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 536F94780D08451897790BD2 /* NunitoSans-BlackItalic.ttf */; };
+		7EA845B5011148409F43F8E5 /* NunitoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D1C1D67124240228C0ABC7E /* NunitoSans-ExtraBold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8B211CE6810144C5987C3385 /* Mukta-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 029128EFEEC14E93B71E40D2 /* Mukta-SemiBold.ttf */; };
-		9411D9F52AE54B30BEB440D2 /* Mukta-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC69568BF80D432EB5E6223A /* Mukta-Light.ttf */; };
-		C2E0847A7E0147BDBEB153B2 /* Mukta-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E8DFEFFE5846C9A4547D4E /* Mukta-Regular.ttf */; };
-		C8FF5ACE8A774D9EB35A72B4 /* Mukta-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FEC963E144749DBB4C28834 /* Mukta-ExtraLight.ttf */; };
-		F64FA87FE9F946F9A1C50D76 /* Mukta-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E6DF41721064C9B8834E956 /* Mukta-Bold.ttf */; };
+		8297076A7A5A4E71ABA6CC5F /* NunitoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38E4F65FA83348F4B4DC66E8 /* NunitoSans-BoldItalic.ttf */; };
+		9B09EABDE0034AF8AA4ADB2D /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A01A45429A54C63A87E50F0 /* NunitoSans-Regular.ttf */; };
+		A4E5B8F4842445B795702C67 /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F6DB283317A409B9F11E022 /* NunitoSans-Light.ttf */; };
+		A98F0B4F3E9D454A9B53BFB9 /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA0425113154445F9C844E7E /* NunitoSans-Bold.ttf */; };
+		AB5C468D89854CD18D3452C3 /* NunitoSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3D18C797D8A4E008C299F38 /* NunitoSans-Black.ttf */; };
+		D13F795F0A6D40759DC16789 /* NunitoSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69BF4CF77AC94490B49E043F /* NunitoSans-ExtraLightItalic.ttf */; };
+		DFB4237127A24B3FA2D26224 /* NunitoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F3BCD2AD7194F9ABEB19836 /* NunitoSans-Italic.ttf */; };
+		FEA9D7EFC3F34D858BD803B7 /* NunitoSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC7DF439B16C48CE81573B4A /* NunitoSans-ExtraBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,35 +36,42 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = rn_template;
+			remoteInfo = MarvelChampions;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* rn_templateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rn_templateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* MarvelChampionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelChampionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* rn_templateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rn_templateTests.m; sourceTree = "<group>"; };
-		029128EFEEC14E93B71E40D2 /* Mukta-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mukta-SemiBold.ttf"; path = "../src/Assets/Fonts/Mukta-SemiBold.ttf"; sourceTree = "<group>"; };
-		08DFC69164EE654B3305999B /* Pods-rn_template-rn_templateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_template-rn_templateTests.debug.xcconfig"; path = "Target Support Files/Pods-rn_template-rn_templateTests/Pods-rn_template-rn_templateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		0A31E2AFF4FD9AA26EF4F321 /* Pods-rn_template-rn_templateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_template-rn_templateTests.release.xcconfig"; path = "Target Support Files/Pods-rn_template-rn_templateTests/Pods-rn_template-rn_templateTests.release.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* rn_template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rn_template.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = rn_template/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = rn_template/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = rn_template/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rn_template/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rn_template/main.m; sourceTree = "<group>"; };
-		1E6DF41721064C9B8834E956 /* Mukta-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mukta-Bold.ttf"; path = "../src/Assets/Fonts/Mukta-Bold.ttf"; sourceTree = "<group>"; };
-		2B3B872CB098EA6F35918720 /* libPods-rn_template.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rn_template.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3261F1652D3648CAAD2AD890 /* Mukta-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mukta-ExtraBold.ttf"; path = "../src/Assets/Fonts/Mukta-ExtraBold.ttf"; sourceTree = "<group>"; };
-		4CF6888F58E68B0CCB3CB253 /* Pods-rn_template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_template.release.xcconfig"; path = "Target Support Files/Pods-rn_template/Pods-rn_template.release.xcconfig"; sourceTree = "<group>"; };
-		7B328747453DF00847E56F12 /* Pods-rn_template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_template.debug.xcconfig"; path = "Target Support Files/Pods-rn_template/Pods-rn_template.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rn_template/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9FEC963E144749DBB4C28834 /* Mukta-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mukta-ExtraLight.ttf"; path = "../src/Assets/Fonts/Mukta-ExtraLight.ttf"; sourceTree = "<group>"; };
-		A26D470DAFA18A5410F61EF9 /* libPods-rn_template-rn_templateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rn_template-rn_templateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B47E8F1BBD9F48E8B1CA5E7C /* Mukta-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mukta-Medium.ttf"; path = "../src/Assets/Fonts/Mukta-Medium.ttf"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* MarvelChampionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarvelChampionsTests.m; sourceTree = "<group>"; };
+		08DFC69164EE654B3305999B /* Pods-MarvelChampions-MarvelChampionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelChampions-MarvelChampionsTests.debug.xcconfig"; path = "Target Support Files/Pods-MarvelChampions-MarvelChampionsTests/Pods-MarvelChampions-MarvelChampionsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0A31E2AFF4FD9AA26EF4F321 /* Pods-MarvelChampions-MarvelChampionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelChampions-MarvelChampionsTests.release.xcconfig"; path = "Target Support Files/Pods-MarvelChampions-MarvelChampionsTests/Pods-MarvelChampions-MarvelChampionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		0B7C8D96264745D6BCB97D6C /* NunitoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-SemiBoldItalic.ttf"; path = "../src/Assets/Fonts/NunitoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* MarvelChampions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelChampions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MarvelChampions/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MarvelChampions/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MarvelChampions/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MarvelChampions/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MarvelChampions/main.m; sourceTree = "<group>"; };
+		2B3B872CB098EA6F35918720 /* libPods-MarvelChampions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarvelChampions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9CC12C60D347F6803CF961 /* NunitoSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-LightItalic.ttf"; path = "../src/Assets/Fonts/NunitoSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		38E4F65FA83348F4B4DC66E8 /* NunitoSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-BoldItalic.ttf"; path = "../src/Assets/Fonts/NunitoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3A01A45429A54C63A87E50F0 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-Regular.ttf"; path = "../src/Assets/Fonts/NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		4CF6888F58E68B0CCB3CB253 /* Pods-MarvelChampions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelChampions.release.xcconfig"; path = "Target Support Files/Pods-MarvelChampions/Pods-MarvelChampions.release.xcconfig"; sourceTree = "<group>"; };
+		536F94780D08451897790BD2 /* NunitoSans-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-BlackItalic.ttf"; path = "../src/Assets/Fonts/NunitoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5F6DB283317A409B9F11E022 /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-Light.ttf"; path = "../src/Assets/Fonts/NunitoSans-Light.ttf"; sourceTree = "<group>"; };
+		69BF4CF77AC94490B49E043F /* NunitoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-ExtraLightItalic.ttf"; path = "../src/Assets/Fonts/NunitoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		7B328747453DF00847E56F12 /* Pods-MarvelChampions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelChampions.debug.xcconfig"; path = "Target Support Files/Pods-MarvelChampions/Pods-MarvelChampions.debug.xcconfig"; sourceTree = "<group>"; };
+		7D1C1D67124240228C0ABC7E /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-ExtraBold.ttf"; path = "../src/Assets/Fonts/NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7F3BCD2AD7194F9ABEB19836 /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-Italic.ttf"; path = "../src/Assets/Fonts/NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MarvelChampions/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9869E755CEE44168A855AB5B /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-SemiBold.ttf"; path = "../src/Assets/Fonts/NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		A26D470DAFA18A5410F61EF9 /* libPods-MarvelChampions-MarvelChampionsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarvelChampions-MarvelChampionsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0425113154445F9C844E7E /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-Bold.ttf"; path = "../src/Assets/Fonts/NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		CC7DF439B16C48CE81573B4A /* NunitoSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-ExtraBoldItalic.ttf"; path = "../src/Assets/Fonts/NunitoSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		E08B65A9509B4C1298662333 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-ExtraLight.ttf"; path = "../src/Assets/Fonts/NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		E3D18C797D8A4E008C299F38 /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-Black.ttf"; path = "../src/Assets/Fonts/NunitoSans-Black.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F3E8DFEFFE5846C9A4547D4E /* Mukta-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mukta-Regular.ttf"; path = "../src/Assets/Fonts/Mukta-Regular.ttf"; sourceTree = "<group>"; };
-		FC69568BF80D432EB5E6223A /* Mukta-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Mukta-Light.ttf"; path = "../src/Assets/Fonts/Mukta-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15E977D2D7100BC7A795CA97 /* libPods-rn_template-rn_templateTests.a in Frameworks */,
+				15E977D2D7100BC7A795CA97 /* libPods-MarvelChampions-MarvelChampionsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,20 +87,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				227FFE4B129DEE87DFF6505C /* libPods-rn_template.a in Frameworks */,
+				227FFE4B129DEE87DFF6505C /* libPods-MarvelChampions.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* rn_templateTests */ = {
+		00E356EF1AD99517003FC87E /* MarvelChampionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* rn_templateTests.m */,
+				00E356F21AD99517003FC87E /* MarvelChampionsTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = rn_templateTests;
+			path = MarvelChampionsTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -97,7 +111,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* rn_template */ = {
+		13B07FAE1A68108700A75B9A /* MarvelChampions */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -107,30 +121,36 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = rn_template;
+			name = MarvelChampions;
 			sourceTree = "<group>";
 		};
 		2296A1C111614E3E8ED4DA53 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1E6DF41721064C9B8834E956 /* Mukta-Bold.ttf */,
-				3261F1652D3648CAAD2AD890 /* Mukta-ExtraBold.ttf */,
-				9FEC963E144749DBB4C28834 /* Mukta-ExtraLight.ttf */,
-				FC69568BF80D432EB5E6223A /* Mukta-Light.ttf */,
-				B47E8F1BBD9F48E8B1CA5E7C /* Mukta-Medium.ttf */,
-				F3E8DFEFFE5846C9A4547D4E /* Mukta-Regular.ttf */,
-				029128EFEEC14E93B71E40D2 /* Mukta-SemiBold.ttf */,
+				E3D18C797D8A4E008C299F38 /* NunitoSans-Black.ttf */,
+				536F94780D08451897790BD2 /* NunitoSans-BlackItalic.ttf */,
+				CA0425113154445F9C844E7E /* NunitoSans-Bold.ttf */,
+				38E4F65FA83348F4B4DC66E8 /* NunitoSans-BoldItalic.ttf */,
+				7D1C1D67124240228C0ABC7E /* NunitoSans-ExtraBold.ttf */,
+				CC7DF439B16C48CE81573B4A /* NunitoSans-ExtraBoldItalic.ttf */,
+				E08B65A9509B4C1298662333 /* NunitoSans-ExtraLight.ttf */,
+				69BF4CF77AC94490B49E043F /* NunitoSans-ExtraLightItalic.ttf */,
+				7F3BCD2AD7194F9ABEB19836 /* NunitoSans-Italic.ttf */,
+				5F6DB283317A409B9F11E022 /* NunitoSans-Light.ttf */,
+				2E9CC12C60D347F6803CF961 /* NunitoSans-LightItalic.ttf */,
+				3A01A45429A54C63A87E50F0 /* NunitoSans-Regular.ttf */,
+				9869E755CEE44168A855AB5B /* NunitoSans-SemiBold.ttf */,
+				0B7C8D96264745D6BCB97D6C /* NunitoSans-SemiBoldItalic.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				2B3B872CB098EA6F35918720 /* libPods-rn_template.a */,
-				A26D470DAFA18A5410F61EF9 /* libPods-rn_template-rn_templateTests.a */,
+				2B3B872CB098EA6F35918720 /* libPods-MarvelChampions.a */,
+				A26D470DAFA18A5410F61EF9 /* libPods-MarvelChampions-MarvelChampionsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,12 +158,11 @@
 		457DA73C14B6056F109F0566 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7B328747453DF00847E56F12 /* Pods-rn_template.debug.xcconfig */,
-				4CF6888F58E68B0CCB3CB253 /* Pods-rn_template.release.xcconfig */,
-				08DFC69164EE654B3305999B /* Pods-rn_template-rn_templateTests.debug.xcconfig */,
-				0A31E2AFF4FD9AA26EF4F321 /* Pods-rn_template-rn_templateTests.release.xcconfig */,
+				7B328747453DF00847E56F12 /* Pods-MarvelChampions.debug.xcconfig */,
+				4CF6888F58E68B0CCB3CB253 /* Pods-MarvelChampions.release.xcconfig */,
+				08DFC69164EE654B3305999B /* Pods-MarvelChampions-MarvelChampionsTests.debug.xcconfig */,
+				0A31E2AFF4FD9AA26EF4F321 /* Pods-MarvelChampions-MarvelChampionsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -157,9 +176,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* rn_template */,
+				13B07FAE1A68108700A75B9A /* MarvelChampions */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* rn_templateTests */,
+				00E356EF1AD99517003FC87E /* MarvelChampionsTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				457DA73C14B6056F109F0566 /* Pods */,
@@ -173,8 +192,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* rn_template.app */,
-				00E356EE1AD99517003FC87E /* rn_templateTests.xctest */,
+				13B07F961A680F5B00A75B9A /* MarvelChampions.app */,
+				00E356EE1AD99517003FC87E /* MarvelChampionsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* rn_templateTests */ = {
+		00E356ED1AD99517003FC87E /* MarvelChampionsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "rn_templateTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MarvelChampionsTests" */;
 			buildPhases = (
 				C05488A531FE512D77EC5281 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -198,14 +217,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = rn_templateTests;
-			productName = rn_templateTests;
-			productReference = 00E356EE1AD99517003FC87E /* rn_templateTests.xctest */;
+			name = MarvelChampionsTests;
+			productName = MarvelChampionsTests;
+			productReference = 00E356EE1AD99517003FC87E /* MarvelChampionsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* rn_template */ = {
+		13B07F861A680F5B00A75B9A /* MarvelChampions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "rn_template" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MarvelChampions" */;
 			buildPhases = (
 				3F782B96A85AC591632C733B /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -220,9 +239,9 @@
 			);
 			dependencies = (
 			);
-			name = rn_template;
-			productName = rn_template;
-			productReference = 13B07F961A680F5B00A75B9A /* rn_template.app */;
+			name = MarvelChampions;
+			productName = MarvelChampions;
+			productReference = 13B07F961A680F5B00A75B9A /* MarvelChampions.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -242,7 +261,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "rn_template" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MarvelChampions" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -255,8 +274,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* rn_template */,
-				00E356ED1AD99517003FC87E /* rn_templateTests */,
+				13B07F861A680F5B00A75B9A /* MarvelChampions */,
+				00E356ED1AD99517003FC87E /* MarvelChampionsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,13 +294,20 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				F64FA87FE9F946F9A1C50D76 /* Mukta-Bold.ttf in Resources */,
-				562028FDBB3044A5B767D8B0 /* Mukta-ExtraBold.ttf in Resources */,
-				C8FF5ACE8A774D9EB35A72B4 /* Mukta-ExtraLight.ttf in Resources */,
-				9411D9F52AE54B30BEB440D2 /* Mukta-Light.ttf in Resources */,
-				3C87A0E788E4417EB7B2C379 /* Mukta-Medium.ttf in Resources */,
-				C2E0847A7E0147BDBEB153B2 /* Mukta-Regular.ttf in Resources */,
-				8B211CE6810144C5987C3385 /* Mukta-SemiBold.ttf in Resources */,
+				AB5C468D89854CD18D3452C3 /* NunitoSans-Black.ttf in Resources */,
+				5965625E2C4146F5AB4F7C5B /* NunitoSans-BlackItalic.ttf in Resources */,
+				A98F0B4F3E9D454A9B53BFB9 /* NunitoSans-Bold.ttf in Resources */,
+				8297076A7A5A4E71ABA6CC5F /* NunitoSans-BoldItalic.ttf in Resources */,
+				7EA845B5011148409F43F8E5 /* NunitoSans-ExtraBold.ttf in Resources */,
+				FEA9D7EFC3F34D858BD803B7 /* NunitoSans-ExtraBoldItalic.ttf in Resources */,
+				11E043F3D00144A4AEFF5829 /* NunitoSans-ExtraLight.ttf in Resources */,
+				D13F795F0A6D40759DC16789 /* NunitoSans-ExtraLightItalic.ttf in Resources */,
+				DFB4237127A24B3FA2D26224 /* NunitoSans-Italic.ttf in Resources */,
+				A4E5B8F4842445B795702C67 /* NunitoSans-Light.ttf in Resources */,
+				14316549AE89421AA4FFE897 /* NunitoSans-LightItalic.ttf in Resources */,
+				9B09EABDE0034AF8AA4ADB2D /* NunitoSans-Regular.ttf in Resources */,
+				0B2353E66F744FBC846289AA /* NunitoSans-SemiBold.ttf in Resources */,
+				00440842AD314BF7A75EB6F9 /* NunitoSans-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,15 +334,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rn_template/Pods-rn_template-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions/Pods-MarvelChampions-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rn_template/Pods-rn_template-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions/Pods-MarvelChampions-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rn_template/Pods-rn_template-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions/Pods-MarvelChampions-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3F782B96A85AC591632C733B /* [CP] Check Pods Manifest.lock */ = {
@@ -334,7 +360,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-rn_template-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MarvelChampions-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -347,15 +373,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rn_template-rn_templateTests/Pods-rn_template-rn_templateTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions-MarvelChampionsTests/Pods-MarvelChampions-MarvelChampionsTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rn_template-rn_templateTests/Pods-rn_template-rn_templateTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions-MarvelChampionsTests/Pods-MarvelChampions-MarvelChampionsTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rn_template-rn_templateTests/Pods-rn_template-rn_templateTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions-MarvelChampionsTests/Pods-MarvelChampions-MarvelChampionsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C05488A531FE512D77EC5281 /* [CP] Check Pods Manifest.lock */ = {
@@ -373,7 +399,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-rn_template-rn_templateTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MarvelChampions-MarvelChampionsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -386,15 +412,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rn_template-rn_templateTests/Pods-rn_template-rn_templateTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions-MarvelChampionsTests/Pods-MarvelChampions-MarvelChampionsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rn_template-rn_templateTests/Pods-rn_template-rn_templateTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions-MarvelChampionsTests/Pods-MarvelChampions-MarvelChampionsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rn_template-rn_templateTests/Pods-rn_template-rn_templateTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions-MarvelChampionsTests/Pods-MarvelChampions-MarvelChampionsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DA3A200296294971A6237E2D /* [CP] Embed Pods Frameworks */ = {
@@ -403,15 +429,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rn_template/Pods-rn_template-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions/Pods-MarvelChampions-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-rn_template/Pods-rn_template-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions/Pods-MarvelChampions-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rn_template/Pods-rn_template-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarvelChampions/Pods-MarvelChampions-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -440,7 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* rn_templateTests.m in Sources */,
+				00E356F31AD99517003FC87E /* MarvelChampionsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +484,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* rn_template */;
+			target = 13B07F861A680F5B00A75B9A /* MarvelChampions */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -466,14 +492,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08DFC69164EE654B3305999B /* Pods-rn_template-rn_templateTests.debug.xcconfig */;
+			baseConfigurationReference = 08DFC69164EE654B3305999B /* Pods-MarvelChampions-MarvelChampionsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = rn_templateTests/Info.plist;
+				INFOPLIST_FILE = MarvelChampionsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,17 +513,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rn_template.app/rn_template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelChampions.app/MarvelChampions";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A31E2AFF4FD9AA26EF4F321 /* Pods-rn_template-rn_templateTests.release.xcconfig */;
+			baseConfigurationReference = 0A31E2AFF4FD9AA26EF4F321 /* Pods-MarvelChampions-MarvelChampionsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = rn_templateTests/Info.plist;
+				INFOPLIST_FILE = MarvelChampionsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -511,19 +537,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rn_template.app/rn_template";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarvelChampions.app/MarvelChampions";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B328747453DF00847E56F12 /* Pods-rn_template.debug.xcconfig */;
+			baseConfigurationReference = 7B328747453DF00847E56F12 /* Pods-MarvelChampions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = rn_template/Info.plist;
+				INFOPLIST_FILE = MarvelChampions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -534,7 +560,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = rn_template;
+				PRODUCT_NAME = MarvelChampions;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -543,12 +569,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CF6888F58E68B0CCB3CB253 /* Pods-rn_template.release.xcconfig */;
+			baseConfigurationReference = 4CF6888F58E68B0CCB3CB253 /* Pods-MarvelChampions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = rn_template/Info.plist;
+				INFOPLIST_FILE = MarvelChampions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,7 +585,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = rn_template;
+				PRODUCT_NAME = MarvelChampions;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -691,7 +717,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "rn_templateTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MarvelChampionsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -700,7 +726,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "rn_template" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MarvelChampions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -709,7 +735,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "rn_template" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MarvelChampions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

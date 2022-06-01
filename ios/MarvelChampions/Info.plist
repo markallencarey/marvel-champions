@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>rn_template</string>
+	<string>MarvelChampions</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -53,13 +53,20 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Mukta-Bold.ttf</string>
-		<string>Mukta-ExtraBold.ttf</string>
-		<string>Mukta-ExtraLight.ttf</string>
-		<string>Mukta-Light.ttf</string>
-		<string>Mukta-Medium.ttf</string>
-		<string>Mukta-Regular.ttf</string>
-		<string>Mukta-SemiBold.ttf</string>
+		<string>NunitoSans-Black.ttf</string>
+		<string>NunitoSans-BlackItalic.ttf</string>
+		<string>NunitoSans-Bold.ttf</string>
+		<string>NunitoSans-BoldItalic.ttf</string>
+		<string>NunitoSans-ExtraBold.ttf</string>
+		<string>NunitoSans-ExtraBoldItalic.ttf</string>
+		<string>NunitoSans-ExtraLight.ttf</string>
+		<string>NunitoSans-ExtraLightItalic.ttf</string>
+		<string>NunitoSans-Italic.ttf</string>
+		<string>NunitoSans-Light.ttf</string>
+		<string>NunitoSans-LightItalic.ttf</string>
+		<string>NunitoSans-Regular.ttf</string>
+		<string>NunitoSans-SemiBold.ttf</string>
+		<string>NunitoSans-SemiBoldItalic.ttf</string>
 	</array>
 </dict>
 </plist>
