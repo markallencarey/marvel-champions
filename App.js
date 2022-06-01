@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TouchableOpacity, LogBox } from 'react-native'
 //Packages
 import SplashScreen from 'react-native-splash-screen'
 //Context
-import { DummyProvider } from './src/Context/DummyProvider'
+// import { DummyProvider } from './src/Context/DummyProvider'
 //Constants
 //Navigation
 import { NavigationContainer } from '@react-navigation/native'
@@ -26,11 +26,11 @@ const App = () => {
 
 	return (
 		<NavigationContainer>
-			<DummyProvider>
-				<View style={styles.appView}>
-					<Routes />
-				</View>
-			</DummyProvider>
+			{/* <DummyProvider> */}
+			<View style={styles.appView}>
+				<Routes />
+			</View>
+			{/* </DummyProvider> */}
 		</NavigationContainer>
 	)
 }

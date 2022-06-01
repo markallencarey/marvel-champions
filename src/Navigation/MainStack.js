@@ -9,8 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 //Components
 //Screens
 import { Home } from '../Screens/Home/Home'
-import { Screen1 } from '../Screens/Home/Screen1'
-import { Screen2 } from '../Screens/Home/Screen2'
+import { CardList } from '../Screens/Home/CardList'
+import { DeckList } from '../Screens/Home/DeckList'
 //Icons
 //Images
 //Data
@@ -32,17 +32,19 @@ export const MainStack = () => {
 				}}
 			/>
 			<Stack.Screen
-				name='Screen1'
-				component={Screen1}
+				name='CardList'
+				component={CardList}
 				options={{
 					...headerOptions,
+					headerTitle: 'Card List'
 				}}
 			/>
 			<Stack.Screen
-				name='Screen2'
-				component={Screen2}
+				name='DeckList'
+				component={DeckList}
 				options={{
 					...headerOptions,
+					headerTitle: 'Deck List'
 				}}
 			/>
 		</Stack.Navigator>

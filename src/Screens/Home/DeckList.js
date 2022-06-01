@@ -13,14 +13,14 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 //Styles
 import { Buttons, Colors, Containers, Fonts, Icons, Images, Index, Misc, Window } from '../../Styles/Index'
 
-export const Screen2 = () => {
+export const DeckList = () => {
 	const popup = () => {
 		alert(`You're doing awesome!`)
 	}
 
 	return (
 		<View style={styles.content}>
-			<Text style={styles.h2}>Screen2.js</Text>
+			<Text style={styles.h2}>DeckList.js</Text>
 			<TouchableOpacity style={styles.btn} onPress={popup}>
 				<Text style={styles.body}>Tap Me!</Text>
 			</TouchableOpacity>

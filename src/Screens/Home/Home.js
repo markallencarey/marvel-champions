@@ -7,8 +7,8 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 //Navigation
 //Components
 //Screens
-import { Screen1 } from '../../Screens/Home/Screen1'
-import { Screen2 } from '../../Screens/Home/Screen2'
+// import { CardList } from './CardList'
+// import { DeckList } from '../../Screens/Home/DeckList'
 //Icons
 //Images
 //Data
@@ -16,25 +16,25 @@ import { Screen2 } from '../../Screens/Home/Screen2'
 import { Buttons, Colors, Containers, Fonts, Icons, Images, Index, Misc, Window } from '../../Styles/Index'
 
 export const Home = ({ navigation }) => {
-	const goToScreen1 = () => {
-		navigation.navigate('Screen1')
+	const goToCardList = () => {
+		navigation.navigate('CardList')
 	}
 
-	const goToScreen2 = () => {
-		navigation.navigate('Screen2')
+	const goToDeckList = () => {
+		navigation.navigate('DeckList')
 	}
 
 	return (
 		<View style={styles.content}>
-			<Text style={styles.h2}>Home.js</Text>
+			{/* <Text style={styles.h2}>Home.js</Text> */}
 			<View style={styles.navRow}>
-				<TouchableOpacity style={styles.navBtn} onPress={goToScreen1}>
-					<Text style={styles.body}>Go to</Text>
-					<Text style={styles.body}>Screen1</Text>
+				<TouchableOpacity style={styles.navBtn} onPress={goToCardList}>
+					{/* <Text style={styles.body}>Go to</Text> */}
+					<Text style={styles.body}>Card List</Text>
 				</TouchableOpacity>
-				<TouchableOpacity style={styles.navBtn} onPress={goToScreen2}>
-					<Text style={styles.body}>Go to</Text>
-					<Text style={styles.body}>Screen2</Text>
+				<TouchableOpacity style={styles.navBtn} onPress={goToDeckList}>
+					{/* <Text style={styles.body}>Go to</Text> */}
+					<Text style={styles.body}>Deck List</Text>
 				</TouchableOpacity>
 			</View>
 		</View>
