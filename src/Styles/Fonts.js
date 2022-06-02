@@ -41,6 +41,11 @@ const styles = StyleSheet.create({
 		fontFamily: regular,
 		color: Colors.black,
 	},
+	boldBody: {
+		fontSize: RFValue(14, standardScreenHeight),
+		fontFamily: bold,
+		color: Colors.black,
+	},
 	italicBody: {
 		fontSize: RFValue(14, standardScreenHeight),
 		fontFamily: italic,
@@ -52,4 +57,5 @@ export const h1 = styles.h1
 export const h2 = styles.h2
 export const h3 = styles.h3
 export const body = styles.body
+export const boldBody = styles.boldBody
 export const italicBody = styles.italicBody

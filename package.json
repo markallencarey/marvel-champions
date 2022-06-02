@@ -16,6 +16,8 @@
     "pod-install": "^0.1.31",
     "react": "17.0.2",
     "react-native": "0.67.1",
+    "react-native-dropdown-picker": "^5.4.2",
+    "react-native-fast-image": "^8.5.11",
     "react-native-rename": "^2.9.0",
     "react-native-render-html": "^6.3.4",
     "react-native-responsive-fontsize": "^0.5.1",

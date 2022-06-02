@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native'
 
 export const padding = 20
 export const margin = 20
-export const borderRadius = 5
+export const borderRadius = 15
 
 const styles = StyleSheet.create({
 	shadow: {

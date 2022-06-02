@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
 		height: '100%',
 		width: '100%',
 		flex: 1,
-		paddingHorizontal: Misc.padding * 2,
+		paddingHorizontal: Misc.padding,
 		paddingVertical: Misc.padding,
 		alignItems: 'center',
 	},
