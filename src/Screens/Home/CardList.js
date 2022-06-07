@@ -6,6 +6,7 @@ import axios from 'axios'
 import RenderHtml from 'react-native-render-html'
 import FastImage from 'react-native-fast-image'
 import DropDownPicker from 'react-native-dropdown-picker'
+// import ImageColors from 'react-native-image-colors'
 //Context
 //Constants
 //Navigation
@@ -74,10 +75,16 @@ export const CardList = () => {
 		})
 	}, [renderedCards])
 
-	const renderCard = card => {
+	const renderCard = async card => {
 		const { name, text, traits, imagesrc, pack_name } = card.item
 
 		const img = `https://marvelcdb.com${imagesrc}`
+
+		// const colorResult = await ImageColors.getColors(img).then(res => {
+		// 	console.log('file: CardList.js -> line 85 -> colorResult -> res', res)
+		// })
+		// console.log('file: CardList.js -> line 86 -> colorResult -> colorResult', colorResult())
+
 		const renderTxt = {
 			html: text,
 		}
