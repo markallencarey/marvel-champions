@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
 		paddingHorizontal: Misc.padding,
 		paddingVertical: Misc.padding,
 		alignItems: 'center',
+		backgroundColor: Colors.background,
 	},
 	textInput: {
 		...Misc.border,
