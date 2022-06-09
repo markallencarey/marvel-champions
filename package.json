@@ -13,7 +13,7 @@
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/native-stack": "^6.3.0",
     "axios": "^0.27.2",
-    "pod-install": "^0.1.31",
+    "pod-install": "^0.1.36",
     "react": "17.0.2",
     "react-native": "0.67.1",
     "react-native-dropdown-picker": "^5.4.2",
