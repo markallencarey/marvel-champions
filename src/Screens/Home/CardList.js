@@ -6,7 +6,7 @@ import axios from 'axios'
 import RenderHtml from 'react-native-render-html'
 import FastImage from 'react-native-fast-image'
 import DropDownPicker from 'react-native-dropdown-picker'
-// import ImageColors from 'react-native-image-colors'
+import ImageColors from 'react-native-image-colors'
 //Context
 //Constants
 //Navigation
@@ -75,18 +75,43 @@ export const CardList = () => {
 		})
 	}, [renderedCards])
 
-	const renderCard = async card => {
+	const renderCard = card => {
 		const { name, text, traits, imagesrc, pack_name } = card.item
 
 		const img = `https://marvelcdb.com${imagesrc}`
 
-		// const colorResult = await ImageColors.getColors(img).then(res => {
-		// 	console.log('file: CardList.js -> line 85 -> colorResult -> res', res)
-		// })
-		// console.log('file: CardList.js -> line 86 -> colorResult -> colorResult', colorResult())
+		const fetchColors = async () => {
+			const result = await ImageColors.getColors('https://marvelcdb.com/bundles/cards/01010b.png', {
+				fallback: '#228B22',
+				cache: true,
+				key: 'unique_key',
+			})
+
+			switch (result.platform) {
+				case 'android':
+					// android result properties
+					const vibrantColor = result.vibrant
+					console.log('file: CardList.js -> line 94 -> fetchColors -> vibrantColor', vibrantColor)
+					break
+				case 'web':
+					// web result properties
+					const lightVibrantColor = result.lightVibrant
+					console.log('file: CardList.js -> line 99 -> fetchColors -> lightVibrantColor', lightVibrantColor)
+					break
+				case 'ios':
+					// iOS result properties
+					const primaryColor = result.primary
+					console.log('file: CardList.js -> line 104 -> fetchColors -> primaryColor', primaryColor)
+					break
+				default:
+					throw new Error('Unexpected platform key')
+			}
+		}
+
+		fetchColors()
 
 		const renderTxt = {
-			html: text,
+			html: text ? text : '',
 		}
 
 		const htmlStyle = {
