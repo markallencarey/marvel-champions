@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
 	nameView: {
 		marginBottom: Misc.margin / 2,
 		alignItems: 'center',
-		marginTop: Misc.margin,
+		// marginTop: Misc.margin,
 	},
 	imgView: {
 		...Misc.shadow,
@@ -127,7 +127,12 @@ const styles = StyleSheet.create({
 	},
 	bottomView: {
 		...Misc.shadow,
-		// backgroundColor: Colors.background,
+		backgroundColor: Colors.background,
+		borderWidth: 2,
+		// paddingHorizontal: Misc.padding,
+		padding: Misc.padding,
+		marginTop: Misc.margin,
+		borderRadius: Misc.borderRadius,
 	},
 	divider: {
 		width: '100%',
@@ -142,6 +147,7 @@ const styles = StyleSheet.create({
 	},
 	set: {
 		...Fonts.boldBody,
+		// paddingBottom: Misc.padding,
 	},
 	diag1: colors => ({
 		opacity: 0.75,

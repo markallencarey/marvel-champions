@@ -96,8 +96,8 @@ export const CardList = () => {
 		setRenderedCards(sortedCards)
 	}
 
-	return (
-		<View style={styles.content}>
+	const SortingView = () => (
+		<View>
 			<View style={styles.btnView}>
 				<TouchableOpacity style={styles.btn} onPress={sortAtoZ}>
 					<Text style={styles.body}>A to Z</Text>
@@ -122,8 +122,19 @@ export const CardList = () => {
 					onSelectItem={item => (item.value === 'all' ? setRenderedCards(allCards) : item.value ? filterByPack(item.value) : null)}
 				/>
 			</View>
+		</View>
+	)
+
+	return (
+		<View style={styles.content}>
 			{!cardsLoading ? (
-				<FlatList data={renderedCards} renderItem={item => <Card card={item} />} keyExtractor={item => item.code} style={styles.flatList} />
+				<FlatList
+					data={renderedCards}
+					renderItem={item => <Card card={item} />}
+					keyExtractor={item => item.code}
+					style={styles.flatList}
+					ListHeaderComponent={SortingView}
+				/>
 			) : (
 				<ActivityIndicator style={styles.activityIndicator} size='large' />
 			)}
@@ -155,7 +166,7 @@ const styles = StyleSheet.create({
 		marginBottom: Misc.margin,
 		flexDirection: 'row',
 		justifyContent: 'space-between',
-		paddingHorizontal: Misc.padding,
+		// paddingHorizontal: Misc.padding,
 		zIndex: 1000,
 	},
 	packDropDown: packsDropDownOpen => ({
