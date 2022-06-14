@@ -24,17 +24,15 @@ const htmlStyle = {
 }
 
 export const Card = card => {
-	const { name, text, traits, imagesrc, pack_name } = card.card.item
+	const { name, text, traits, imagesrc, pack_name, code } = card.card.item
 
 	const [colors, setColors] = useState({})
-	// console.log('file: Card.js -> line 23 -> colors', colors)
 
 	const img = `https://marvelcdb.com${imagesrc}`
 
 	useEffect(() => {
 		const fetchColors = async () => {
 			const result = await ImageColors.getColors(img)
-			// console.log('file: Card.js -> line 41 -> fetchColors -> result', name, result.primary)
 
 			setColors(result)
 		}
@@ -47,7 +45,9 @@ export const Card = card => {
 	}
 
 	return (
-		<View style={styles.cardView}>
+		// <View style={styles.cardView}>
+		<TouchableOpacity style={styles.cardView} onPress={() => setActiveCard(code)}>
+			{/* <TouchableOpacity style={styles.cardView}> */}
 			<View style={styles.diag1(colors)} />
 			<View style={styles.diag2(colors)} />
 			<View style={styles.imgView}>
@@ -82,7 +82,8 @@ export const Card = card => {
 					<Text style={styles.set}>{pack_name}</Text>
 				</View>
 			</View>
-		</View>
+		</TouchableOpacity>
+		// </View>
 	)
 }
 

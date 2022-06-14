@@ -4,6 +4,8 @@ import { View, Text, StyleSheet, TouchableOpacity, FlatList, ActivityIndicator }
 //Packages
 import axios from 'axios'
 import DropDownPicker from 'react-native-dropdown-picker'
+// import Carousel from 'react-native-snap-carousel'
+import FastImage from 'react-native-fast-image'
 //Context
 //Constants
 //Navigation
@@ -24,6 +26,9 @@ export const CardList = () => {
 	const [selectedPack, setSelectedPack] = useState()
 	const [allPacks, setAllPacks] = useState([])
 	const [cardsLoading, setCardsLoading] = useState(false)
+	const [activeCard, setActiveCard] = useState('hello activeCard')
+	// console.log('file: CardList.js -> line 30 -> CardList -> activeCard', activeCard)
+	const [carouselVisible, setCarouselVisible] = useState(false)
 
 	const getAllCards = async () => {
 		setCardsLoading(true)
@@ -87,7 +92,6 @@ export const CardList = () => {
 
 	const sortAtoZ = () => {
 		const sortedCards = renderedCards.sort((a, b) => (a.name > b.name ? 1 : -1))
-		// console.log('file: CardList.js -> line 138 -> sortAtoZ -> sortedCards', sortedCards)
 		setRenderedCards(sortedCards)
 	}
 
@@ -125,8 +129,36 @@ export const CardList = () => {
 		</View>
 	)
 
+	const renderCarouselItem = ({ card, index }) => {
+		const { name, text, traits, imagesrc, pack_name } = card.card.item
+
+		const img = `https://marvelcdb.com${imagesrc}`
+
+		return (
+			<FastImage
+				style={styles.cardImg}
+				source={{
+					uri: img,
+					priority: FastImage.priority.normal,
+				}}
+				resizeMode={FastImage.resizeMode.contain}
+			/>
+		)
+	}
+
 	return (
 		<View style={styles.content}>
+			{/* {carouselVisible ? (
+				<Carousel
+					layout={'default'}
+					ref={ref => (this.carousel = ref)}
+					data={renderedCards}
+					sliderWidth={300}
+					itemWidth={300}
+					renderItem={renderCarouselItem}
+					onSnapToItem={index => setActiveIndex(index)}
+				/>
+			) : null} */}
 			{!cardsLoading ? (
 				<FlatList
 					data={renderedCards}
@@ -217,5 +249,8 @@ const styles = StyleSheet.create({
 		width: '100%',
 		marginBottom: Misc.margin,
 		paddingHorizontal: Misc.padding,
+	},
+	cardImg: {
+		height: Window.height * 0.75,
 	},
 })
