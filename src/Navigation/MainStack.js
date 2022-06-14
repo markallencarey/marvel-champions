@@ -9,7 +9,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 //Components
 //Screens
 import { Home } from '../Screens/Home/Home'
-import { CardList } from '../Screens/Home/CardList'
+import { CardList } from '../Screens/CardList/CardList'
 import { DeckList } from '../Screens/Home/DeckList'
 //Icons
 //Images
@@ -20,7 +20,12 @@ import { Buttons, Colors, Containers, Fonts, Icons, Images, Index, Misc, Window 
 const Stack = createNativeStackNavigator()
 
 export const MainStack = () => {
-	const headerOptions = {}
+	const headerOptions = {
+		headerShadowVisible: false,
+		headerStyle: {
+			backgroundColor: Colors.background,
+		},
+	}
 
 	return (
 		<Stack.Navigator initialRouteName={'Home'}>
@@ -36,7 +41,7 @@ export const MainStack = () => {
 				component={CardList}
 				options={{
 					...headerOptions,
-					headerTitle: 'Card List'
+					headerTitle: 'Card List',
 				}}
 			/>
 			<Stack.Screen
@@ -44,7 +49,7 @@ export const MainStack = () => {
 				component={DeckList}
 				options={{
 					...headerOptions,
-					headerTitle: 'Deck List'
+					headerTitle: 'Deck List',
 				}}
 			/>
 		</Stack.Navigator>

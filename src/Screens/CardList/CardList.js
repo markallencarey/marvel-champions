@@ -3,14 +3,12 @@ import React, { useContext, useEffect, useState } from 'react'
 import { View, Text, StyleSheet, TouchableOpacity, FlatList, ActivityIndicator } from 'react-native'
 //Packages
 import axios from 'axios'
-import RenderHtml from 'react-native-render-html'
-import FastImage from 'react-native-fast-image'
 import DropDownPicker from 'react-native-dropdown-picker'
-import ImageColors from 'react-native-image-colors'
 //Context
 //Constants
 //Navigation
 //Components
+import { Card } from './Card'
 //Screens
 //Icons
 //Images
@@ -75,83 +73,6 @@ export const CardList = () => {
 		})
 	}, [renderedCards])
 
-	const renderCard = card => {
-		const { name, text, traits, imagesrc, pack_name } = card.item
-
-		const img = `https://marvelcdb.com${imagesrc}`
-
-		const fetchColors = async () => {
-			const result = await ImageColors.getColors('https://marvelcdb.com/bundles/cards/01010b.png', {
-				fallback: '#228B22',
-				cache: true,
-				key: 'unique_key',
-			})
-
-			switch (result.platform) {
-				case 'android':
-					// android result properties
-					const vibrantColor = result.vibrant
-					console.log('file: CardList.js -> line 94 -> fetchColors -> vibrantColor', vibrantColor)
-					break
-				case 'web':
-					// web result properties
-					const lightVibrantColor = result.lightVibrant
-					console.log('file: CardList.js -> line 99 -> fetchColors -> lightVibrantColor', lightVibrantColor)
-					break
-				case 'ios':
-					// iOS result properties
-					const primaryColor = result.primary
-					console.log('file: CardList.js -> line 104 -> fetchColors -> primaryColor', primaryColor)
-					break
-				default:
-					throw new Error('Unexpected platform key')
-			}
-		}
-
-		fetchColors()
-
-		const renderTxt = {
-			html: text ? text : '',
-		}
-
-		const htmlStyle = {
-			body: {
-				...Fonts.body,
-				paddingBottom: Misc.padding / 2,
-			},
-		}
-
-		return (
-			<View style={styles.cardView}>
-				{imagesrc ? (
-					<FastImage
-						style={styles.cardImg}
-						source={{
-							uri: img,
-							priority: FastImage.priority.normal,
-						}}
-						resizeMode={FastImage.resizeMode.contain}
-					/>
-				) : (
-					<FastImage
-						style={styles.cardImg}
-						source={{
-							uri: 'https://cf.geekdo-images.com/kRvUgYiaOq07kC67ZK5UoQ__opengraph/img/mRM4HyXvEdJ2XJJNxo1RdJpVkig=/fit-in/1200x630/filters:strip_icc()/pic4900321.jpg',
-							priority: FastImage.priority.normal,
-						}}
-						resizeMode={FastImage.resizeMode.contain}
-					/>
-				)}
-				<View style={styles.nameView}>
-					<Text style={styles.h2}>{name}</Text>
-					<Text style={styles.italicBody}>{traits}</Text>
-				</View>
-				<RenderHtml contentWidth={Window.width} source={renderTxt} tagsStyles={htmlStyle} />
-				<Text style={styles.set}>Pack: {pack_name}</Text>
-			</View>
-		)
-	}
-
 	const filterByPack = async pack_code => {
 		setCardsLoading(true)
 		await axios
@@ -185,22 +106,24 @@ export const CardList = () => {
 					<Text style={styles.body}>Z to A</Text>
 				</TouchableOpacity>
 			</View>
-			<DropDownPicker
-				open={packsDropDownOpen}
-				value={selectedPack}
-				items={packsLabels}
-				setOpen={setPacksDropDownOpen}
-				setValue={setSelectedPack}
-				setItems={setPacksLabels}
-				style={styles.packDropDown(packsDropDownOpen)}
-				dropDownContainerStyle={styles.containerDropDown}
-				labelStyle={styles.dropDownLabel}
-				textStyle={styles.dropDownText}
-				placeholder={'Filter by pack...'}
-				onSelectItem={item => (item.value === 'all' ? setRenderedCards(allCards) : item.value ? filterByPack(item.value) : null)}
-			/>
+			<View style={styles.btnView}>
+				<DropDownPicker
+					open={packsDropDownOpen}
+					value={selectedPack}
+					items={packsLabels}
+					setOpen={setPacksDropDownOpen}
+					setValue={setSelectedPack}
+					setItems={setPacksLabels}
+					style={styles.packDropDown(packsDropDownOpen)}
+					dropDownContainerStyle={styles.containerDropDown}
+					labelStyle={styles.dropDownLabel}
+					textStyle={styles.dropDownText}
+					placeholder={'Filter by pack...'}
+					onSelectItem={item => (item.value === 'all' ? setRenderedCards(allCards) : item.value ? filterByPack(item.value) : null)}
+				/>
+			</View>
 			{!cardsLoading ? (
-				<FlatList data={renderedCards} renderItem={renderCard} keyExtractor={item => item.code} style={styles.flatList} />
+				<FlatList data={renderedCards} renderItem={item => <Card card={item} />} keyExtractor={item => item.code} style={styles.flatList} />
 			) : (
 				<ActivityIndicator style={styles.activityIndicator} size='large' />
 			)}
@@ -232,6 +155,8 @@ const styles = StyleSheet.create({
 		marginBottom: Misc.margin,
 		flexDirection: 'row',
 		justifyContent: 'space-between',
+		paddingHorizontal: Misc.padding,
+		zIndex: 1000,
 	},
 	packDropDown: packsDropDownOpen => ({
 		backgroundColor: Colors.background,
@@ -280,28 +205,6 @@ const styles = StyleSheet.create({
 	flatList: {
 		width: '100%',
 		marginBottom: Misc.margin,
-	},
-	cardView: {
-		borderWidth: 2,
-		width: '100%',
-		marginBottom: Misc.margin / 2,
-		padding: Misc.padding,
-		borderRadius: Misc.borderRadius,
-	},
-	nameView: {
-		marginBottom: Misc.margin / 2,
-		alignItems: 'center',
-	},
-	cardImg: {
-		height: Window.height * 0.15,
-		marginBottom: Misc.margin / 2,
-	},
-	setView: {
-		width: '100%',
-		flexDirection: 'row',
-		justifyContent: 'space-between',
-	},
-	set: {
-		...Fonts.body,
+		paddingHorizontal: Misc.padding,
 	},
 })
