@@ -23,8 +23,8 @@ const htmlStyle = {
 	},
 }
 
-export const Card = card => {
-	const { name, text, traits, imagesrc, pack_name, code } = card.card.item
+export const Card = ({ card, activeCard, setActiveCard, setCarouselVisible }) => {
+	const { name, text, traits, imagesrc, pack_name, code } = card
 
 	const [colors, setColors] = useState({})
 
@@ -45,9 +45,13 @@ export const Card = card => {
 	}
 
 	return (
-		// <View style={styles.cardView}>
-		<TouchableOpacity style={styles.cardView} onPress={() => setActiveCard(code)}>
-			{/* <TouchableOpacity style={styles.cardView}> */}
+		<TouchableOpacity
+			style={styles.cardView}
+			onPress={() => {
+				setActiveCard(code)
+				setCarouselVisible(true)
+			}}
+		>
 			<View style={styles.diag1(colors)} />
 			<View style={styles.diag2(colors)} />
 			<View style={styles.imgView}>
@@ -83,7 +87,6 @@ export const Card = card => {
 				</View>
 			</View>
 		</TouchableOpacity>
-		// </View>
 	)
 }
 
@@ -115,22 +118,19 @@ const styles = StyleSheet.create({
 	nameView: {
 		marginBottom: Misc.margin / 2,
 		alignItems: 'center',
-		// marginTop: Misc.margin,
 	},
 	imgView: {
 		...Misc.shadow,
-		height: Window.height * 0.15,
+		height: Window.height * 0.2,
 	},
 	cardImg: {
 		marginBottom: Misc.margin / 2,
-		// ...Misc.shadow,
 		height: '100%',
 	},
 	bottomView: {
 		...Misc.shadow,
 		backgroundColor: Colors.background,
 		borderWidth: 2,
-		// paddingHorizontal: Misc.padding,
 		padding: Misc.padding,
 		marginTop: Misc.margin,
 		borderRadius: Misc.borderRadius,
@@ -148,7 +148,6 @@ const styles = StyleSheet.create({
 	},
 	set: {
 		...Fonts.boldBody,
-		// paddingBottom: Misc.padding,
 	},
 	diag1: colors => ({
 		opacity: 0.75,
@@ -156,8 +155,8 @@ const styles = StyleSheet.create({
 		height: 0,
 		backgroundColor: 'transparent',
 		borderStyle: 'solid',
-		borderRightWidth: Window.height * 0.33,
-		borderTopWidth: Window.height * 0.33,
+		borderRightWidth: Window.height * 0.38,
+		borderTopWidth: Window.height * 0.38,
 		borderRightColor: 'transparent',
 		position: 'absolute',
 		borderTopLeftRadius: Misc.borderRadius / 1.15,
@@ -169,8 +168,8 @@ const styles = StyleSheet.create({
 		height: 0,
 		backgroundColor: 'transparent',
 		borderStyle: 'solid',
-		borderLeftWidth: Window.height * 0.33,
-		borderBottomWidth: Window.height * 0.33,
+		borderLeftWidth: Window.height * 0.38,
+		borderBottomWidth: Window.height * 0.38,
 		borderLeftColor: 'transparent',
 		position: 'absolute',
 		bottom: 0,

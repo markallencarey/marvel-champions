@@ -8,7 +8,7 @@ export const borderRadius = 15
 const styles = StyleSheet.create({
 	shadow: {
 		shadowColor: Colors.black,
-		shadowOffset: { width: 5, height: 10 },
+		shadowOffset: { width: 3, height: 7 },
 		shadowOpacity: 0.65,
 		shadowRadius: 5,
 	},

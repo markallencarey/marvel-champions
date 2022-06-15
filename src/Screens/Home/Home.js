@@ -7,8 +7,6 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 //Navigation
 //Components
 //Screens
-// import { CardList } from './CardList'
-// import { DeckList } from '../../Screens/Home/DeckList'
 //Icons
 //Images
 //Data
@@ -26,14 +24,11 @@ export const Home = ({ navigation }) => {
 
 	return (
 		<View style={styles.content}>
-			{/* <Text style={styles.h2}>Home.js</Text> */}
 			<View style={styles.navRow}>
 				<TouchableOpacity style={styles.navBtn} onPress={goToCardList}>
-					{/* <Text style={styles.body}>Go to</Text> */}
 					<Text style={styles.body}>Card List</Text>
 				</TouchableOpacity>
 				<TouchableOpacity style={styles.navBtn} onPress={goToDeckList}>
-					{/* <Text style={styles.body}>Go to</Text> */}
 					<Text style={styles.body}>Deck List</Text>
 				</TouchableOpacity>
 			</View>
@@ -58,5 +53,7 @@ const styles = StyleSheet.create({
 	navBtn: {
 		...Buttons.transparent,
 		marginHorizontal: Misc.margin,
+		backgroundColor: Colors.background,
+		...Misc.shadow,
 	},
 })
