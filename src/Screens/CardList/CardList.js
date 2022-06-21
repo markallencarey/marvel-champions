@@ -143,12 +143,12 @@ export const CardList = () => {
 
 const styles = StyleSheet.create({
 	content: {
-		...Containers.content,
-		paddingVertical: 0,
+		// ...Containers.content,
+		// paddingVertical: 0,
 	},
-	h1: {
-		...Fonts.h1,
-	},
+	// h1: {
+	// 	...Fonts.h1,
+	// },
 	h2: {
 		...Fonts.h2,
 	},
@@ -162,80 +162,69 @@ const styles = StyleSheet.create({
 		...Buttons.transparent,
 		backgroundColor: Colors.background,
 	},
-	flatListHeader: {
-		zIndex: 1000,
-		...Misc.shadow,
-		paddingTop: Misc.padding,
-	},
 	btnView: {
+		width: '100%',
 		marginBottom: Misc.margin,
 		flexDirection: 'row',
 		justifyContent: 'space-between',
+		zIndex: 1000,
+		paddingHorizontal: Misc.padding,
 	},
-	packDropDown: {
-		backgroundColor: Colors.background,
-		borderRadius: Misc.borderRadius,
-		marginBottom: Misc.padding,
-		borderWidth: 2,
-	},
+	// closeCarouselView: {
+	// 	flexDirection: 'row',
+	// 	justifyContent: 'flex-end',
+	// 	paddingRight: Misc.padding,
+	// 	alignItems: 'center',
+	// 	width: Window.width,
+	// },
+	// closeCarouselBtn: {
+	// 	...Buttons.transparent,
+	// 	backgroundColor: Colors.background,
+	// 	...Misc.shadow,
+	// },
+	// closeCarouselText: {
+	// 	...Fonts.body,
+	// },
+	// carouselCardImg: {
+	// 	height: '75%',
+	// 	marginTop: Misc.margin * 1.5,
+	// 	marginBottom: Misc.margin,
+	// },
+	// carouselInfoView: {
+	// 	alignItems: 'center',
+	// },
+
+	packDropDown: packsDropDownOpen => ({
+		// backgroundColor: Colors.background,
+		// borderRadius: Misc.borderRadius,
+		// marginBottom: Misc.padding,
+		// shadowOffset: { width: 5, height: 10 },
+		// shadowOpacity: packsDropDownOpen ? 0.75 : 0,
+		// shadowRadius: 5,
+		// borderWidth: 2,
+	}),
 	containerDropDown: {
-		backgroundColor: Colors.background,
-		borderRadius: Misc.borderRadius,
-		borderWidth: 2,
+		// backgroundColor: Colors.background,
+		// borderRadius: Misc.borderRadius,
+		// shadowColor: Colors.black,
+		// shadowOffset: { width: 5, height: 10 },
+		// shadowOpacity: 0.5,
+		// shadowRadius: 5,
+		// borderWidth: 2,
 	},
-	dropDownLabel: {
-		...Fonts.body,
-	},
+	// dropDownLabel: {
+	// 	...Fonts.body,
+	// },
 	dropDownText: {
 		...Fonts.body,
 	},
-	packList: {
-		width: '100%',
-		marginBottom: Misc.margin,
-		paddingHorizontal: Misc.padding,
-		height: '30%',
-	},
-	packListContainer: {
-		flexDirection: 'row',
-		flexWrap: 'wrap',
-	},
-	packBtn: {
-		...Buttons.transparent,
-		marginBottom: Misc.margin / 2,
-		marginRight: Misc.margin / 2,
-	},
 	activityIndicator: {
-		marginTop: Window.height * 0.25,
+		marginTop: Window.height * 0.1,
 	},
 	flatList: {
 		width: '100%',
 		marginBottom: Misc.margin,
 		paddingHorizontal: Misc.padding,
-	},
-	cardImg: {
-		height: Window.height * 0.75,
-	},
-	closeCarouselView: {
-		flexDirection: 'row',
-		justifyContent: 'flex-end',
-		paddingRight: Misc.padding,
-		alignItems: 'center',
-		width: Window.width,
-	},
-	closeCarouselBtn: {
-		...Buttons.transparent,
-		backgroundColor: Colors.background,
-		...Misc.shadow,
-	},
-	closeCarouselText: {
-		...Fonts.body,
-	},
-	carouselCardImg: {
-		height: '75%',
-		marginTop: Misc.margin * 1.5,
-		marginBottom: Misc.margin,
-	},
-	carouselInfoView: {
-		alignItems: 'center',
+		// zIndex: 0,
 	},
 })
