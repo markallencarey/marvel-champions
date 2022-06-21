@@ -37,7 +37,7 @@ export const CardList = () => {
 	}
 
 	const SortingView = () => (
-		<View style={styles.sortingView}>
+		<View>
 			<View style={styles.btnView}>
 				<TouchableOpacity style={styles.btn} onPress={sortAtoZ}>
 					<Text style={styles.body}>A to Z</Text>
@@ -46,7 +46,7 @@ export const CardList = () => {
 					<Text style={styles.body}>Z to A</Text>
 				</TouchableOpacity>
 			</View>
-			<View>
+			<View style={styles.btnView}>
 				<DropDownPicker
 					open={packsDropDownOpen}
 					value={selectedPack}
@@ -54,7 +54,7 @@ export const CardList = () => {
 					setOpen={setPacksDropDownOpen}
 					setValue={setSelectedPack}
 					setItems={setPacksLabels}
-					style={styles.packDropDown}
+					style={styles.packDropDown(packsDropDownOpen)}
 					dropDownContainerStyle={styles.containerDropDown}
 					labelStyle={styles.dropDownLabel}
 					textStyle={styles.dropDownText}
