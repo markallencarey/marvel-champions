@@ -54,6 +54,6 @@ const styles = StyleSheet.create({
 		...Buttons.transparent,
 		marginHorizontal: Misc.margin,
 		backgroundColor: Colors.background,
-		...Misc.shadow,
+		// ...Misc.shadow,
 	},
 })
