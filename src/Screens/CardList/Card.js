@@ -6,6 +6,7 @@ import FastImage from 'react-native-fast-image'
 import ImageColors from 'react-native-image-colors'
 import RenderHtml from 'react-native-render-html'
 //Context
+import { CardsContext } from '../../Context/CardsProvider'
 //Constants
 //Navigation
 //Components
@@ -23,10 +24,13 @@ const htmlStyle = {
 	},
 }
 
-export const Card = ({ card, activeCard, setActiveCard, setCarouselVisible }) => {
+export const Card = ({ card, setCarouselVisible }) => {
 	const { name, text, traits, imagesrc, pack_name, code } = card
 
 	const [colors, setColors] = useState({})
+
+	const { activeCard, setActiveCard } = useContext(CardsContext)
+	// console.log('file: Card.js -> line 33 -> Card -> activeCard', activeCard.name, activeCard.arrayIndex)
 
 	const img = `https://marvelcdb.com${imagesrc}`
 
@@ -48,7 +52,7 @@ export const Card = ({ card, activeCard, setActiveCard, setCarouselVisible }) =>
 		<TouchableOpacity
 			style={styles.cardView}
 			onPress={() => {
-				setActiveCard(code)
+				setActiveCard(card)
 				setCarouselVisible(true)
 			}}
 		>
@@ -98,7 +102,6 @@ const styles = StyleSheet.create({
 		padding: Misc.padding,
 		borderRadius: Misc.borderRadius,
 		backgroundColor: Colors.background,
-		// ...Misc.shadow,
 	},
 	h1: {
 		...Fonts.h1,
@@ -120,30 +123,15 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 	},
 	imgView: {
-		// ...Misc.shadow,
-		// height: Window.height * 0.25,
-		// width: Window.width * 0.375,
-		// borderWidth: 2,
-		// padding: Misc.padding / 2,
 		height: Window.height * 0.285,
 		alignItems: 'center',
 		justifyContent: 'center',
 	},
 	cardImg: {
-		// marginBottom: Misc.margin / 2,
-		// borderRadius: Misc.borderRadius,
-		// borderWidth: 5,
 		height: '100%',
 		width: '100%',
-		// width: Window.width * 0.45,
-		// width: '62%',
-		resizeMode: 'cover',
-		// backgroundColor: Colors.white,
-
-		// width: '100%',
 	},
 	bottomView: {
-		// ...Misc.shadow,
 		backgroundColor: Colors.background,
 		borderWidth: 2,
 		padding: Misc.padding,

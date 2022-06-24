@@ -20,11 +20,22 @@ import { Buttons, Colors, Containers, Fonts, Icons, Images, Index, Misc, Window 
 
 export const CardList = () => {
 	const [packsDropDownOpen, setPacksDropDownOpen] = useState(false)
-	const [activeCard, setActiveCard] = useState()
 	const [carouselVisible, setCarouselVisible] = useState(false)
 
-	const { allCards, cardsLoading, renderedCards, packsLabels, selectedPack, setSelectedPack, setRenderedCards, setPacksLabels, filterByPack } =
-		useContext(CardsContext)
+	const {
+		allCards,
+		cardsLoading,
+		renderedCards,
+		packsLabels,
+		selectedPack,
+		setSelectedPack,
+		setRenderedCards,
+		setPacksLabels,
+		filterByPack,
+		activeCard,
+		setActiveCard,
+	} = useContext(CardsContext)
+	console.log('file: CardList.js -> line 38 -> CardList -> activeCard', activeCard.name, activeCard.arrayIndex)
 
 	const sortAtoZ = () => {
 		const sortedCards = renderedCards.sort((a, b) => (a.name > b.name ? 1 : -1))
@@ -46,7 +57,7 @@ export const CardList = () => {
 					<Text style={styles.body}>Z to A</Text>
 				</TouchableOpacity>
 			</View>
-			<View style={styles.btnView}>
+			<View style={styles.dropDownView}>
 				<DropDownPicker
 					open={packsDropDownOpen}
 					value={selectedPack}
@@ -67,6 +78,8 @@ export const CardList = () => {
 
 	const renderCarouselItem = card => {
 		const { name, imagesrc, pack_name, card_set_name, set_position, quantity } = card.item
+		// console.log('file: CardList.js -> line 81 -> CardList -> card', card)
+		// console.log('file: CardList.js -> line 81 -> renderCarouselItem -> name', name)
 
 		const img = `https://marvelcdb.com${imagesrc}`
 		return (
@@ -102,7 +115,7 @@ export const CardList = () => {
 							style={styles.closeCarouselBtn}
 							onPress={() => {
 								setCarouselVisible(false)
-								setActiveCard()
+								// setActiveCard()
 							}}
 						>
 							<Text style={styles.closeCarouselText}>Close</Text>
@@ -110,13 +123,26 @@ export const CardList = () => {
 					</View>
 					<Carousel
 						layout={'default'}
-						ref={ref => (carousel = ref)}
 						data={renderedCards}
 						sliderWidth={Window.width}
 						itemWidth={Window.width * 0.8}
 						renderItem={card => renderCarouselItem(card)}
-						onSnapToItem={index => setActiveCard(index)}
 						containerCustomStyle={styles.carousel}
+						onSnapToItem={index => setActiveCard(renderedCards[index])}
+						getItemLayout={(data, index) => ({ length: Window.width, offset: Window.width * index, index })}
+						// initialScrollIndex={activeCard.arrayIndex}
+						// loopClonesPerSide={renderedCards.length}
+						ref={c => {
+							carousel = c
+						}}
+						initialScrollIndex={12}
+						onScrollToIndexFailed={() => console.log('scrollToIndexFailed')}
+						onContentSizeChange={() => {
+							if (carousel && carousel.scrollToIndex && renderedCards && renderedCards.length) {
+								carousel.scrollToIndex({ index: 12 })
+							}
+						}}
+						// useScrollView={true}
 					/>
 				</View>
 			) : null}
@@ -125,18 +151,12 @@ export const CardList = () => {
 				!cardsLoading ? (
 					<FlatList
 						data={renderedCards}
-						renderItem={({ item }) => (
-							<Card
-								card={item}
-								activeCard={activeCard}
-								setActiveCard={setActiveCard}
-								setCarouselVisible={setCarouselVisible}
-								// style={{ zIndex: 0 }}
-							/>
-						)}
+						renderItem={({ item }) => <Card card={item} setCarouselVisible={setCarouselVisible} />}
 						keyExtractor={item => item.code}
 						style={styles.flatList}
 						contentContainerStyle={{ zIndex: 0 }}
+						// initialScrollIndex={activeCard.arrayIndex}
+						// initialNumToRender={renderedCards.length}
 					/>
 				) : (
 					<ActivityIndicator style={styles.activityIndicator} size='large' />
@@ -167,13 +187,14 @@ const styles = StyleSheet.create({
 		...Buttons.transparent,
 		backgroundColor: Colors.background,
 	},
-	// flatListHeader: {
-	// 	zIndex: 1000,
-	// 	...Misc.shadow,
-	// 	paddingTop: Misc.padding,
-	// },
 	btnView: {
 		marginBottom: Misc.margin,
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+		paddingHorizontal: Misc.padding,
+	},
+	dropDownView: {
+		marginBottom: Misc.margin / 2,
 		flexDirection: 'row',
 		justifyContent: 'space-between',
 		paddingHorizontal: Misc.padding,
@@ -181,15 +202,13 @@ const styles = StyleSheet.create({
 	packDropDown: packsDropDownOpen => ({
 		backgroundColor: Colors.background,
 		borderRadius: Misc.borderRadius,
-		marginBottom: Misc.padding,
+		// marginBottom: Misc.padding,
 		borderWidth: 2,
-		// zIndex: 1000,
 	}),
 	containerDropDown: {
 		backgroundColor: Colors.background,
 		borderRadius: Misc.borderRadius,
 		borderWidth: 2,
-		// zIndex: 1000,
 	},
 	dropDownLabel: {
 		...Fonts.body,
@@ -220,6 +239,7 @@ const styles = StyleSheet.create({
 		marginBottom: Misc.margin,
 		paddingHorizontal: Misc.padding,
 		zIndex: 0,
+		paddingTop: Misc.margin,
 	},
 	cardImg: {
 		height: Window.height * 0.75,
@@ -235,12 +255,10 @@ const styles = StyleSheet.create({
 		paddingRight: Misc.padding,
 		alignItems: 'center',
 		width: Window.width,
-		// backgroundColor: 'blue',
 	},
 	closeCarouselBtn: {
 		...Buttons.transparent,
 		backgroundColor: Colors.background,
-		// ...Misc.shadow,
 	},
 	closeCarouselText: {
 		...Fonts.body,
@@ -251,7 +269,6 @@ const styles = StyleSheet.create({
 		marginBottom: Misc.margin,
 	},
 	carouselInfoView: {
-		// backgroundColor: 'blue',
 		alignItems: 'center',
 	},
 })

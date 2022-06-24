@@ -16,11 +16,17 @@ export const CardsContext = createContext()
 
 export const CardsProvider = ({ children }) => {
 	const [allCards, setAllCards] = useState([])
+	// console.log('file: CardsProvider.js -> line 19 -> CardsProvider -> allCards index 0', allCards[0]?.name)
+	// console.log('file: CardsProvider.js -> line 19 -> CardsProvider -> allCards', allCards ? true : false, allCards.length)
 	const [cardsLoading, setCardsLoading] = useState(false)
 	const [renderedCards, setRenderedCards] = useState([])
+	// console.log('file: CardsProvider.js -> line 23 -> CardsProvider -> renderedCards.length', renderedCards.length)
 	const [selectedPack, setSelectedPack] = useState()
 	const [allPacks, setAllPacks] = useState([])
 	const [packsLabels, setPacksLabels] = useState([{ label: 'All cards', value: 'all' }])
+	const [activeCard, setActiveCard] = useState({})
+	console.log('file: CardsProvider.js -> line 28 -> CardsProvider -> activeCard', activeCard.name, activeCard.arrayIndex)
+	// console.log('file: CardsProvider.js -> line 25 -> CardsProvider -> activeCard', activeCard?.name)
 
 	const getAllCards = async () => {
 		setCardsLoading(true)
@@ -32,6 +38,7 @@ export const CardsProvider = ({ children }) => {
 				setCardsLoading(false)
 				console.log('finished getAllCards()')
 				setSelectedPack()
+				setActiveCard(res.data[0])
 			})
 			.catch(e => console.log('error: ', e))
 	}
@@ -57,7 +64,8 @@ export const CardsProvider = ({ children }) => {
 	}, [])
 
 	useEffect(() => {
-		renderedCards.map(card => {
+		renderedCards.map((card, index) => {
+			card.arrayIndex = index
 			if (!card.imagesrc) {
 				allCards.map(card2 => {
 					if (card2.imagesrc) {
@@ -93,9 +101,11 @@ export const CardsProvider = ({ children }) => {
 				setCardsLoading,
 				setRenderedCards,
 				selectedPack,
-        setSelectedPack,
-        setPacksLabels,
+				setSelectedPack,
+				setPacksLabels,
 				filterByPack,
+				activeCard,
+				setActiveCard,
 			}}
 		>
 			{children}
