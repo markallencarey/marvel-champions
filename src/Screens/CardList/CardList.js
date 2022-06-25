@@ -130,19 +130,11 @@ export const CardList = () => {
 						containerCustomStyle={styles.carousel}
 						onSnapToItem={index => setActiveCard(renderedCards[index])}
 						getItemLayout={(data, index) => ({ length: Window.width, offset: Window.width * index, index })}
-						// initialScrollIndex={activeCard.arrayIndex}
-						// loopClonesPerSide={renderedCards.length}
 						ref={c => {
 							carousel = c
 						}}
+						initialNumToRender={renderedCards.length}
 						initialScrollIndex={12}
-						onScrollToIndexFailed={() => console.log('scrollToIndexFailed')}
-						onContentSizeChange={() => {
-							if (carousel && carousel.scrollToIndex && renderedCards && renderedCards.length) {
-								carousel.scrollToIndex({ index: 12 })
-							}
-						}}
-						// useScrollView={true}
 					/>
 				</View>
 			) : null}
