@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "rn_launchscreen.png",
+      "filename" : "Created 2022 by Mark Carey.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "rn_launchscreen@2x.png",
+      "filename" : "Created 2022 by Mark Carey@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "rn_launchscreen@3x.png",
+      "filename" : "Created 2022 by Mark Carey@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

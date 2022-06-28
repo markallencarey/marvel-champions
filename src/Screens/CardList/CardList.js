@@ -1,5 +1,5 @@
 //React & React Native
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState, useRef } from 'react'
 import { View, Text, StyleSheet, TouchableOpacity, FlatList, ActivityIndicator } from 'react-native'
 //Packages
 import DropDownPicker from 'react-native-dropdown-picker'
@@ -78,8 +78,6 @@ export const CardList = () => {
 
 	const renderCarouselItem = card => {
 		const { name, imagesrc, pack_name, card_set_name, set_position, quantity } = card.item
-		// console.log('file: CardList.js -> line 81 -> CardList -> card', card)
-		// console.log('file: CardList.js -> line 81 -> renderCarouselItem -> name', name)
 
 		const img = `https://marvelcdb.com${imagesrc}`
 		return (
@@ -115,7 +113,6 @@ export const CardList = () => {
 							style={styles.closeCarouselBtn}
 							onPress={() => {
 								setCarouselVisible(false)
-								// setActiveCard()
 							}}
 						>
 							<Text style={styles.closeCarouselText}>Close</Text>
@@ -130,11 +127,10 @@ export const CardList = () => {
 						containerCustomStyle={styles.carousel}
 						onSnapToItem={index => setActiveCard(renderedCards[index])}
 						getItemLayout={(data, index) => ({ length: Window.width, offset: Window.width * index, index })}
-						ref={c => {
-							carousel = c
+						ref={ref => {
+							carousel = ref
 						}}
-						initialNumToRender={renderedCards.length}
-						initialScrollIndex={12}
+						firstItem={activeCard.arrayIndex}
 					/>
 				</View>
 			) : null}
@@ -147,8 +143,8 @@ export const CardList = () => {
 						keyExtractor={item => item.code}
 						style={styles.flatList}
 						contentContainerStyle={{ zIndex: 0 }}
-						// initialScrollIndex={activeCard.arrayIndex}
-						// initialNumToRender={renderedCards.length}
+						getItemLayout={(data, index) => ({ length: Window.width, offset: Window.width * index, index })}
+						initialScrollIndex={activeCard.arrayIndex}
 					/>
 				) : (
 					<ActivityIndicator style={styles.activityIndicator} size='large' />

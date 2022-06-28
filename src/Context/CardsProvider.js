@@ -25,7 +25,7 @@ export const CardsProvider = ({ children }) => {
 	const [allPacks, setAllPacks] = useState([])
 	const [packsLabels, setPacksLabels] = useState([{ label: 'All cards', value: 'all' }])
 	const [activeCard, setActiveCard] = useState({})
-	console.log('file: CardsProvider.js -> line 28 -> CardsProvider -> activeCard', activeCard.name, activeCard.arrayIndex)
+	// console.log('file: CardsProvider.js -> line 28 -> CardsProvider -> activeCard', activeCard.name, activeCard.arrayIndex)
 	// console.log('file: CardsProvider.js -> line 25 -> CardsProvider -> activeCard', activeCard?.name)
 
 	const getAllCards = async () => {
