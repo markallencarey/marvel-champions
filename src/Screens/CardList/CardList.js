@@ -131,6 +131,7 @@ export const CardList = () => {
 							carousel = ref
 						}}
 						firstItem={activeCard.arrayIndex}
+						initialNumToRender={renderedCards.length}
 					/>
 				</View>
 			) : null}
@@ -145,6 +146,7 @@ export const CardList = () => {
 						contentContainerStyle={{ zIndex: 0 }}
 						getItemLayout={(data, index) => ({ length: Window.width, offset: Window.width * index, index })}
 						initialScrollIndex={activeCard.arrayIndex}
+						initialNumToRender={renderedCards.length}
 					/>
 				) : (
 					<ActivityIndicator style={styles.activityIndicator} size='large' />
@@ -190,7 +192,6 @@ const styles = StyleSheet.create({
 	packDropDown: packsDropDownOpen => ({
 		backgroundColor: Colors.background,
 		borderRadius: Misc.borderRadius,
-		// marginBottom: Misc.padding,
 		borderWidth: 2,
 	}),
 	containerDropDown: {
@@ -232,11 +233,7 @@ const styles = StyleSheet.create({
 	cardImg: {
 		height: Window.height * 0.75,
 	},
-	carousel: {
-		// backgroundColor: 'blue',
-		// height: Window.height * 0.5,
-		// top: Misc.margin * -2,
-	},
+	carousel: {},
 	closeCarouselView: {
 		flexDirection: 'row',
 		justifyContent: 'flex-end',
